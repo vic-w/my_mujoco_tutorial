@@ -13,7 +13,7 @@ xml = """
 model = mujoco.MjModel.from_xml_string(xml)
 data = mujoco.MjData(model)
 
-# 使用交互式查看器
-with mujoco.viewer.launch_passive(model, data) as viewer:
-    # 保持窗口打开一段时间，或模拟一段时间
-    time.sleep(10)
+viewer = mujoco.viewer.launch_passive(model, data)
+
+
+time.sleep(10)
