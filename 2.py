@@ -19,6 +19,7 @@ xml = """
 
 model = mujoco.MjModel.from_xml_string(xml)
 data = mujoco.MjData(model)
+
 renderer = mujoco.Renderer(model)
 
 duration = 3 # (seconds)
