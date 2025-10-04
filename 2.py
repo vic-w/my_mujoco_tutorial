@@ -21,8 +21,9 @@ model = mujoco.MjModel.from_xml_string(xml)
 data = mujoco.MjData(model)
 renderer = mujoco.Renderer(model)
 
-duration = 3.8  # (seconds)
+duration = 3 # (seconds)
 framerate = 60  # (Hz)
+#model.opt.gravity = (0, 0, 10)
 
 # Simulate and display video.
 frames = []
